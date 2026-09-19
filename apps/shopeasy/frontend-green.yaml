@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: oluwademilade/shopeasy-frontend:v4.6
+        image: muteeat/shopeasy-frontend:v4.6
         ports:
         - containerPort: 8080
