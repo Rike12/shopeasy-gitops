@@ -8,15 +8,15 @@ spec:
   selector:
     matchLabels:
       app: frontend
-      version: v4.6
+      version: v4.4
   template:
     metadata:
       labels:
         app: frontend
-        version: v4.6
+        version: v4.4
     spec:
       containers:
       - name: frontend
-        image: muteeat/shopeasy-frontend:v4.6
+        image: muteeat/shopeasy-frontend:v4.4
         ports:
         - containerPort: 8080
