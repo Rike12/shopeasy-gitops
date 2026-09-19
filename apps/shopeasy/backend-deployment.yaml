@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: muteeat/shopeasy-backend:v4.3
+          image: oluwademilade/shopeasy-backend:v4.3
           ports:
             - containerPort: 5000
           envFrom:
