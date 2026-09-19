@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-green
+  namespace: development
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: frontend
+      version: v4.6
+  template:
+    metadata:
+      labels:
+        app: frontend
+        version: v4.6
+    spec:
+      containers:
+      - name: frontend
+        image: oluwademilade/shopeasy-frontend:v4.6
+        ports:
+        - containerPort: 8080
